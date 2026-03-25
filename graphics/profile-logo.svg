@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#0d1528"/>
+      <stop offset="100%" stop-color="#0a0e1a"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a9eff"/>
+      <stop offset="100%" stop-color="#74c0ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="133" x2="400" y2="133" stroke="#1e2535" stroke-width="1"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#1e2535" stroke-width="1"/>
+  <line x1="0" y1="267" x2="400" y2="267" stroke="#1e2535" stroke-width="1"/>
+
+  <!-- Grid lines vertical -->
+  <line x1="133" y1="0" x2="133" y2="400" stroke="#1e2535" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#1e2535" stroke-width="1"/>
+  <line x1="267" y1="0" x2="267" y2="400" stroke="#1e2535" stroke-width="1"/>
+
+  <!-- Power bolt / signal icon -->
+  <polygon points="220,100 175,210 205,210 180,310 245,185 210,185 235,100" fill="url(#accent)" opacity="0.9"/>
+
+  <!-- "THE GRID" text -->
+  <text x="200" y="355" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="28" font-weight="800" letter-spacing="8" text-anchor="middle"
+        fill="#e8eaf0" text-transform="uppercase">THE GRID</text>
+</svg>
