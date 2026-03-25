@@ -179,6 +179,7 @@ footer{
     You're in. First issue coming soon.
   </div>
   <p class="form-note">No spam. One email per week. Unsubscribe anytime.</p>
+
 </div>
 
 <div class="divider"></div>
@@ -245,16 +246,9 @@ function handleSignup() {
     document.getElementById('email-input').focus();
     return;
   }
-  // Save locally for now — swap for Beehiiv/Substack API later
-  const subs = JSON.parse(localStorage.getItem('the_grid_subs') || '[]');
-  if (!subs.includes(email)) subs.push(email);
-  localStorage.setItem('the_grid_subs', JSON.stringify(subs));
-
-  document.getElementById('signup-form').style.display = 'none';
-  document.getElementById('confirmed').style.display = 'block';
+  window.location.href = 'https://justins-newsletter-ef5a03.beehiiv.com/subscribe?email=' + encodeURIComponent(email);
 }
 
-// Allow Enter key on email input
 document.getElementById('email-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') handleSignup();
 });
